@@ -1,0 +1,91 @@
+body {
+    background-color: #000080; /* Fondo azul oscuro */
+    color: #fff; /* Texto blanco */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    background-image: url('/img/Fire-Flame-PNG-Clipart.png'); /* Ruta a tu imagen de llama */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 200px; /* Espaciado interno para que la imagen cubra las letras */
+}
+
+.header h1 {
+    color: yellow;
+    margin: 0;
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté delante del fondo */
+}
+
+.header h2 {
+    font-size: 48px;
+    color: orange;
+    margin: 0;
+    animation: flicker 1s infinite alternate;
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté delante del fondo */
+}
+
+.header h3 {
+    color: magenta;
+    margin: 10px 0;
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté delante del fondo */
+}
+
+.enter-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.counter {
+    display: flex; /* Muestra los dígitos en fila */
+    gap: 5px; /* Espacio entre los cuadros */
+    margin-top: 20px;
+}
+
+.digit {
+    background-color: black;
+    color: lime;
+    font-size: 24px;
+    font-family: 'Courier New', monospace; /* Fuente de estilo digital */
+    padding: 10px;
+    border: 2px solid lime;
+    width: 30px; /* Ajusta el tamaño del cuadro */
+    height: 40px; /* Ajusta el tamaño del cuadro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+
+
+
